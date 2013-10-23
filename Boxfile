@@ -1,4 +1,4 @@
 web1:
   type: ruby
   name: thisisaname
-  exec: bundle exec puma -C puma.rb
+  exec: bundle exec ruby app.rb

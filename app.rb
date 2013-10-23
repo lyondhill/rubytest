@@ -1,9 +1,7 @@
 require 'sinatra'
+set :port, (ENV['PORT'] || 3000)
 
-class App < Sinatra::Base
+post '/greetings/:name' do "I hate you #{params[:name]}, GO AWAY!" end
+get '/' do "Hello World!" end
 
-  get '/hi' do
-    "Hello World!"
-  end
 
-end
