@@ -1,4 +1,4 @@
 web1:
   type: ruby
   name: thisisaname
-  exec: bundle exec ruby app.rb
+  exec: echo 'require "sinatra"\n set :port, (ENV["PORT"] || 3000)\n post "/greetings/:name" do "I hate you #{params[:name]}, GO AWAY" end\n get "/" do "Hello World\!" end' | bundle exec ruby
